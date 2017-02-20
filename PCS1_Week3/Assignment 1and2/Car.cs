@@ -13,8 +13,8 @@ namespace Assignment_1and2
 
         public Car (string model, int speed)
         {
-            model = this.Model;
-            speed = this.Speed;
+            Model = model;
+            Speed = speed;
         }
     }
 }

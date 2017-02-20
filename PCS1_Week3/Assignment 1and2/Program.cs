@@ -12,6 +12,9 @@ namespace Assignment_1and2
         {
             //Possible to initialize a list of objects using a constructor to give a custom name?
             Car Audi = new Car("Audi", 25);
+            Car BMW = new Car("BMW", 25);
+            Car Mercedes = new Car("Mercedes", 25);
+            Car Toyota = new Car("Toyota", 25);
 
             Console.WriteLine("Starting speed of {0} is:  {1} km/h", Audi.Model, Audi.Speed);
             Console.WriteLine("\nNow some speed changing ...\n");
@@ -22,9 +25,9 @@ namespace Assignment_1and2
             Console.WriteLine("After setting to 5, new speed of {0} is:  {1} km/h", Audi.Model, Audi.Speed = 5);
 
             Console.WriteLine("\nOther car models are: \n");
-            /*Console.WriteLine("Model: {0}, speed: {1}", Mercedes.Model, Mercedes.Speed);
+            Console.WriteLine("Model: {0}, speed: {1}", Mercedes.Model, Mercedes.Speed);
             Console.WriteLine("Model: {0}, speed: {1}", BMW.Model, BMW.Speed);
-            Console.WriteLine("Model: {0}, speed: {1}", Toyota.Model, Toyota.Speed);*/
+            Console.WriteLine("Model: {0}, speed: {1}", Toyota.Model, Toyota.Speed);
 
 
             Console.WriteLine("\nPress any key to continue ...");
