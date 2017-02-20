@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication2", "ConsoleApplication2\ConsoleApplication2.csproj", "{5FC15460-FED8-4790-A21E-BEF39C3572EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F91E382F-33EF-478E-9238-21D9B7D31BC8}"
+	ProjectSection(SolutionItems) = preProject
+		class.txt = class.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImperativeOO", "ImperativeOO\ImperativeOO.csproj", "{CAEBB2BB-F8BF-4401-9010-259A155A52BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5FC15460-FED8-4790-A21E-BEF39C3572EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FC15460-FED8-4790-A21E-BEF39C3572EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FC15460-FED8-4790-A21E-BEF39C3572EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FC15460-FED8-4790-A21E-BEF39C3572EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAEBB2BB-F8BF-4401-9010-259A155A52BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAEBB2BB-F8BF-4401-9010-259A155A52BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAEBB2BB-F8BF-4401-9010-259A155A52BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAEBB2BB-F8BF-4401-9010-259A155A52BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

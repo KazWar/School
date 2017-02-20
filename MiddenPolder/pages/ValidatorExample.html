@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #formUser {
+            margin: 16px;
+        }
+
+            #formUser div {
+                margin-bottom: 4px;
+            }
+
+                #formUser div.label {
+                    width: 160px;
+                    display: inline-block;
+                }
+
+                #formUser div.error {
+                    display: inline-block;
+                    color: red;
+                    padding-left: 8px;
+                }
+
+            #formUser input[type='text'] {
+                border: solid gray 1px;
+                padding-left: 2px;
+            }
+
+                #formUser input[type='text'].invalid {
+                    border: solid red 1px;
+                    padding-left: 2px;
+                }
+    </style>
+    <script src="https://code.jquery.com/jquery-2.1.1.js">
+    </script>
+    <script src="../jquery/jquery.validator.js">
+
+    </script>
+    <script>
+        var validator = null;
+        $(document).ready(function () {
+            validator = new Validator({
+                container: '#formUser',
+                invalidClass: 'invalid'
+            });
+        });
+    </script>
+</head>
+<body>
+    <form id="formUser" runat="server">
+        <div style="font-weight: bold;">
+            <asp:Label ID="labelUserName" runat="server" />
+        </div>
+        <div>
+            <div class="label">
+                <label for="fieldName">Name:</label>
+            </div>
+            <input id="fieldName" name="fieldName" type="text" 
+                   data-validate data-validate-required data-validate-message="Name is required" />
+            <div class="error" data-validate-message-for="fieldName">
+            </div>
+        </div>
+        <div>
+            <div class="label">
+                <label for="fieldId">Id:</label>
+            </div>
+            <input id="fieldId" name="fieldId" type="text" 
+                   data-validate data-validate-required data-validate-type="number" data-validate-message="Only numbers allowed" />
+        </div>
+        <div>
+            <div class="label">
+                <label for="fieldCorrect">Correct? (Y/N):</label>
+            </div>
+            <input id="fieldCorrect" name="fieldCorrect" type="text" 
+                   data-validate data-validate-allowed="Y,N" data-validate-uppercase data-validate-message="Only Y and N allowed" />
+        </div>
+        <div>
+            <div class="label">
+                <label for="fieldPostCode">Post code (AA-NNNN):</label>
+            </div>
+            <input id="fieldPostCode" name="fieldPostCode" type="text" 
+                   data-validate data-validate-regex="[A-Z][A-Z]-[0-9][0-9][0-9][0-9]" />
+        </div>
+        <div style="padding-top: 8px; padding-left: 240px;">
+            <button type="button" onclick="if (validator.validate()) alert('Good boy!');">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

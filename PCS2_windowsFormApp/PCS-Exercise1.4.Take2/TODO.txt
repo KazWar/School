@@ -1,0 +1,12 @@
+﻿Entities
+* list of currencies
+* list of exchange rates
+
+Functionality
+* display currency list
+* select source and target currency
+* enter amount
+* convert 
+* display result
+
+
