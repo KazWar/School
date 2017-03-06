@@ -10,17 +10,20 @@ namespace Assignment_13
     {
         static void Main(string[] args)
         {
-            int integerString;
-
             Console.Write("Enter one sequence of numbers (E.G. 532361): ");
-            integerString = Convert.ToInt32(Console.ReadLine());
-
-            while (integerString > 0)
+            string str = Console.ReadLine();
+            for (int i = 0; i < str.Length; i++)
             {
-                var integer = integerString % 10;
-                Console.Write("{0}, ", integer);
-                integerString /= 10;
+                Console.Write("-" + str[i]);
             }
+
+            //while (integerString > 0)
+            //{
+            //    var integer = integerString % 10;
+            //    str = integer + ", " + str;
+            //    integerString /= 10;
+            //}
+           
 
             Console.WriteLine("\nPress any key to contine ...");
             Console.ReadKey();

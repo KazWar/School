@@ -24,11 +24,20 @@ namespace Assignment_7
             {
                 Console.WriteLine("The maximal value is {0}", a);
             } else {
-                Console.WriteLine("The maximal value is {0}", Math.Max(Math.Max(a, b), c));
+                Console.WriteLine("The maximal value is {0}", Max(Max(a, b), c));
             }
 
             Console.WriteLine("\nPress any key to contine ...");
             Console.ReadKey();
+        }
+
+        static int Max(int a, int b)
+        {
+            if (a > b)
+            {
+                return a;
+            }
+            else return b;
         }
     }
 }

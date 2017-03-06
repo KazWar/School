@@ -26,7 +26,7 @@ namespace Assignment_5
 
             do
             {
-                Console.WriteLine("Write -1 to stop buying.");
+                Console.WriteLine("\nWrite -1 to stop buying.");
                 Console.Write("Which product do you want to buy?: ");
                 choice = Convert.ToInt32(Console.ReadLine());
                 if (choice >= 0 && choice < listOfProducts.Count()) { 
@@ -39,7 +39,6 @@ namespace Assignment_5
                     showProductInformation();
                 }
             } while (choice >= 0);
-            showProductInformation();
 
             Console.WriteLine("\nPress any key to continue ...");
             Console.ReadKey();
@@ -50,7 +49,7 @@ namespace Assignment_5
             Console.WriteLine("The following products are availible.");
             foreach (var product in listOfProducts)
             {
-                Console.WriteLine("|Product #|{0,2},  |Name|{1,10},  |Price|{2,10},  |Stock|{3,10}", listOfProducts.IndexOf(product), product.ProductName, product.PricePP, product.InStock);
+                Console.WriteLine("|Product #|{0,2}  |Name|{1,10}  |Price|{2,10}  |Stock|{3,10}", listOfProducts.IndexOf(product), product.ProductName, product.PricePP, product.InStock);
             }
         }
     }
